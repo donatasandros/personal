@@ -1,6 +1,6 @@
 export function MenuBar() {
   return (
-    <div className="bg-[#ece9d8] border-b border-[#aca899] text-[#000000] flex text-xs">
+    <div className="flex border-b border-[#aca899] bg-[#ece9d8] text-xs text-[#000000]">
       <button className="px-3 py-1 hover:bg-[#316ac5] hover:text-white">
         File
       </button>

@@ -1,26 +1,36 @@
-import { TitleBar } from "@/components/title-bar";
-import { MenuBar } from "@/components/menu-bar";
-import { Header } from "@/components/header";
+import type { GuestbookMessage } from "@/types";
+
 import { AboutMe } from "@/components/about-me";
-import { TechStack } from "@/components/tech-stack";
-import { Projects } from "@/components/projects";
 import { Contact } from "@/components/contact";
+import { Guestbook } from "@/components/guestbook";
+import { Header } from "@/components/header";
+import { MenuBar } from "@/components/menu-bar";
+import { Projects } from "@/components/projects";
 import { StartBar } from "@/components/start-bar";
+import { TechStack } from "@/components/tech-stack";
+import { TitleBar } from "@/components/title-bar";
 import { sql } from "@/lib/db";
 
-export default async function Home() {
-  await sql`INSERT INTO views DEFAULT VALUES;`;
+export const dynamic = "force-dynamic";
+
+export default async function IndexPage() {
+  const [[{ count }], guestbookMessages] = (await sql.transaction([
+    sql`SELECT COUNT(*) FROM views;`,
+    sql`SELECT * FROM guestbook_messages ORDER BY created_at DESC;`,
+    sql`INSERT INTO views DEFAULT VALUES;`,
+  ])) as [{ count: number }[], GuestbookMessage[]];
 
   return (
-    <div className="bg-[#008080] pb-14 p-4 font-windows">
-      <div className="max-w-[900px] mx-auto shadow-xl border-2 border-[#0a246a]">
+    <div className="font-windows bg-[#008080] p-4 pb-14">
+      <div className="mx-auto max-w-[900px] border-2 border-[#0a246a] shadow-xl">
         <TitleBar />
         <MenuBar />
-        <div className="bg-white p-4 overflow-auto">
+        <div className="overflow-auto bg-white p-4">
           <Header />
-          <AboutMe />
+          <AboutMe count={count} />
           <TechStack />
           <Projects />
+          <Guestbook messages={guestbookMessages} />
           <Contact />
         </div>
       </div>

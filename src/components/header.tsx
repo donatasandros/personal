@@ -3,7 +3,7 @@ export function Header() {
     <div className="mb-8 text-center">
       <div className="inline-block">
         <div
-          className="text-4xl font-bold mb-2 text-[#0000ff]"
+          className="mb-2 text-4xl font-bold text-[#0000ff]"
           style={{ fontFamily: "Comic Sans MS, cursive" }}
         >
           My Portfolio!

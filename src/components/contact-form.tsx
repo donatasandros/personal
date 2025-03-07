@@ -4,7 +4,7 @@ export function ContactForm() {
   return (
     <form className="space-y-2">
       <div>
-        <label className="block text-sm mb-1">Name:</label>
+        <label className="mb-1 block text-sm">Name:</label>
         <input
           type="text"
           required
@@ -12,7 +12,7 @@ export function ContactForm() {
         />
       </div>
       <div>
-        <label className="block text-sm mb-1">Email:</label>
+        <label className="mb-1 block text-sm">Email:</label>
         <input
           type="email"
           required
@@ -20,7 +20,7 @@ export function ContactForm() {
         />
       </div>
       <div>
-        <label className="block text-sm mb-1">Message:</label>
+        <label className="mb-1 block text-sm">Message:</label>
         <textarea
           className="w-full border-2 border-[#aca899] p-1"
           rows={4}

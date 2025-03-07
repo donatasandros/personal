@@ -1,17 +1,20 @@
+import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { Counter } from "@/components/counter";
 import { CONTACT_INFO } from "@/config/contact-info";
 
-export function AboutMe() {
+interface AboutMeProps {
+  count: number;
+}
+
+export function AboutMe({ count }: AboutMeProps) {
   return (
     <div className="mb-8">
-      <div className="bg-[#ece9d8] border-2 border-[#aca899] p-2 mb-2 flex items-center">
-        <div className="w-4 h-4 bg-[#316ac5] mr-2"></div>
+      <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
+        <div className="mr-2 h-4 w-4 bg-[#316ac5]"></div>
         <h2 className="text-lg font-bold">About Me</h2>
       </div>
-      <div className="border-2 border-[#aca899] p-4 bg-[#ffffff]">
-        <div className="flex flex-col md:flex-row gap-4">
+      <div className="border-2 border-[#aca899] bg-[#ffffff] p-4">
+        <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-2/3">
             <p className="mb-4">
               Hello! My name is Donatas, and I&apos;m a junior frontend
@@ -29,28 +32,28 @@ export function AboutMe() {
               exploring design trends, and finding inspiration for my next
               project.
             </p>
-            <div className="flex justify-center my-4">
+            <div className="my-4 flex justify-center">
               <Button>Download Resume</Button>
             </div>
           </div>
           <div className="md:w-1/3">
             <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
-              <div className="bg-[#316ac5] text-white p-1 mb-2 text-center font-bold">
+              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
                 My Profile
               </div>
-              <div className="flex justify-center mb-2">
-                <div className="w-[100px] h-[100px] border-2 border-[#000000] bg-[#ffffff] flex items-center justify-center">
-                  <Image
-                    src="https://cdn.zenpa.xyz/9J6S"
-                    alt="Profile"
-                    width={90}
-                    height={90}
-                    className="border border-[#aca899]"
+              <div className="mb-2 flex justify-center">
+                <div className="flex h-[100px] w-[100px] items-center justify-center border-2 border-[#000000] bg-[#ffffff]">
+                  <Avatar
+                    type="gamer"
+                    className="size-22.5 border border-[#aca899]"
                   />
                 </div>
               </div>
-              <div className="text-center mb-2">
-                <Counter />
+              <div className="mb-2 text-center">
+                <div className="inline-block border-2 border-[#aca899] bg-white px-2 py-1 text-sm">
+                  <span className="font-bold">Visitors:</span>{" "}
+                  {count.toString().padStart(5, "0")}
+                </div>
               </div>
               <div className="text-center text-xs">
                 <p>Email: {CONTACT_INFO.email}</p>

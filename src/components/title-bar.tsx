@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function TitleBar() {
   return (
-    <div className="bg-gradient-to-r from-[#0a246a] to-[#3a6ea5] text-white p-1 flex justify-between items-center">
+    <div className="flex items-center justify-between bg-gradient-to-r from-[#0a246a] to-[#3a6ea5] p-1 text-white">
       <div className="flex items-center">
         <Image
           src="https://placehold.co/16x16/png"
@@ -14,9 +14,9 @@ export function TitleBar() {
         <span className="text-sm font-bold">My Portfolio - Paint</span>
       </div>
       <div className="flex">
-        <button className="px-2 mx-0.5 hover:bg-[#3a6ea5] text-white">_</button>
-        <button className="px-2 mx-0.5 hover:bg-[#3a6ea5] text-white">□</button>
-        <button className="px-2 mx-0.5 text-white bg-[#ff0000]/80 hover:bg-[#ff0000]">
+        <button className="mx-0.5 px-2 text-white hover:bg-[#3a6ea5]">_</button>
+        <button className="mx-0.5 px-2 text-white hover:bg-[#3a6ea5]">□</button>
+        <button className="mx-0.5 bg-[#ff0000]/80 px-2 text-white hover:bg-[#ff0000]">
           X
         </button>
       </div>

@@ -1,5 +1,5 @@
-import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -14,14 +14,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
-          "bg-[#ece9d8] border-t-2 border-l-2 border-r-2 border-b-2 border-[#aca899] px-4 py-1 active:border-t-2 active:border-l-2 active:border-[#aca899] active:border-r-2 active:border-b-2  focus:outline-none focus:border-dotted focus:border-black",
-          className
+          "border-t-2 border-r-2 border-b-2 border-l-2 border-[#aca899] bg-[#ece9d8] px-4 py-1 focus:border-dotted focus:border-black focus:outline-none active:border-t-2 active:border-r-2 active:border-b-2 active:border-l-2 active:border-[#aca899]",
+          className,
         )}
         ref={ref}
         {...props}
       />
     );
-  }
+  },
 );
 Button.displayName = "Button";
 

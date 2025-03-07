@@ -1,33 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CONTACT_INFO } from "@/config/contact-info";
+
 import { ContactForm } from "@/components/contact-form";
+import { CONTACT_INFO } from "@/config/contact-info";
 
 export function Contact() {
   return (
     <div className="mb-8">
-      <div className="bg-[#ece9d8] border-2 border-[#aca899] p-2 mb-2 flex items-center">
-        <div className="w-4 h-4 bg-[#316ac5] mr-2"></div>
+      <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
+        <div className="mr-2 h-4 w-4 bg-[#316ac5]"></div>
         <h2 className="text-lg font-bold">Contact Me</h2>
       </div>
-      <div className="border-2 border-[#aca899] p-4 bg-[#ffffff]">
-        <div className="flex flex-col md:flex-row gap-4">
+      <div className="border-2 border-[#aca899] bg-[#ffffff] p-4">
+        <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-1/2">
-            <div className="bg-[#ece9d8] border-2 border-[#aca899] p-2 mb-4">
-              <div className="bg-[#316ac5] text-white p-1 mb-2 text-center font-bold">
+            <div className="mb-4 border-2 border-[#aca899] bg-[#ece9d8] p-2">
+              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
                 Send Me a Message
               </div>
               <ContactForm />
             </div>
           </div>
           <div className="md:w-1/2">
-            <div className="bg-[#ece9d8] border-2 border-[#aca899] p-2">
-              <div className="bg-[#316ac5] text-white p-1 mb-2 text-center font-bold">
+            <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
+              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
                 Contact Information
               </div>
               <div className="space-y-4 p-2">
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-[#d4d0c8] border border-[#aca899] flex items-center justify-center mr-2">
+                  <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
                     <Image
                       src="https://placehold.co/16x16/png"
                       alt="Email"
@@ -41,7 +42,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-[#d4d0c8] border border-[#aca899] flex items-center justify-center mr-2">
+                  <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
                     <Image
                       src="https://placehold.co/16x16/png"
                       alt="Location"
@@ -55,7 +56,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-[#d4d0c8] border border-[#aca899] flex items-center justify-center mr-2">
+                  <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
                     <Image
                       src="https://placehold.co/16x16/png"
                       alt="GitHub"
