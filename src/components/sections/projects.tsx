@@ -8,10 +8,10 @@ export function Projects() {
   return (
     <div className="mb-8">
       <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 h-4 w-4 bg-[#316ac5]"></div>
+        <div className="mr-2 size-4 bg-[#316ac5]"></div>
         <h2 className="text-lg font-bold">My Projects</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-[#ffffff] p-4">
+      <div className="border-2 border-[#aca899] bg-white p-4">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {PROJECTS.map(
             ({ image, name, description, link, source_code }, index) => (

@@ -22,17 +22,14 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
   return (
     <React.Fragment>
       {state.success ? (
-        <div className="border border-[#aca899] bg-[#ffffff] p-4 text-center">
+        <div className="border border-[#aca899] bg-white p-4 text-center">
           <p className="mb-2 font-bold text-[#008000]">
             Thank you for signing my guestbook!
           </p>
           <p>Your message has been added.</p>
         </div>
       ) : (
-        <form
-          action={action}
-          className="border border-[#aca899] bg-[#ffffff] p-4"
-        >
+        <form action={action} className="border border-[#aca899] bg-white p-4">
           {!state.success && state.message && (
             <div className="mb-3 border-2 border-[#cc0000] bg-[#ffffcc] p-2">
               <div className="flex items-start">

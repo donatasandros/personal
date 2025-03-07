@@ -14,7 +14,7 @@ export function ContactForm() {
   return (
     <React.Fragment>
       {state.success ? (
-        <div className="border border-[#aca899] bg-[#ffffff] p-4 text-center">
+        <div className="border border-[#aca899] bg-white p-4 text-center">
           <BlinkingText className="mb-2 font-bold text-[#008000]">
             Message sent successfully!
           </BlinkingText>
@@ -32,7 +32,6 @@ export function ContactForm() {
               </div>
             </div>
           )}
-
           <div>
             <label htmlFor="contactName" className="mb-1 block text-sm">
               Name: <span className="text-[#ff0000]">*</span>

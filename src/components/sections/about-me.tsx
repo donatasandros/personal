@@ -10,10 +10,10 @@ export function AboutMe({ count }: AboutMeProps) {
   return (
     <div className="mb-8">
       <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 h-4 w-4 bg-[#316ac5]"></div>
+        <div className="mr-2 size-4 bg-[#316ac5]"></div>
         <h2 className="text-lg font-bold">About Me</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-[#ffffff] p-4">
+      <div className="border-2 border-[#aca899] bg-white p-4">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-2/3">
             <p className="mb-4">
@@ -42,7 +42,7 @@ export function AboutMe({ count }: AboutMeProps) {
                 My Profile
               </div>
               <div className="mb-2 flex justify-center">
-                <div className="flex h-[100px] w-[100px] items-center justify-center border-2 border-[#000000] bg-[#ffffff]">
+                <div className="flex size-[100px] items-center justify-center border-2 border-black bg-white">
                   <Avatar
                     type="gamer"
                     className="size-22.5 border border-[#aca899]"

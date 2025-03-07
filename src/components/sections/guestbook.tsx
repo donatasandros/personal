@@ -19,10 +19,10 @@ export function Guestbook({ messages }: GuestbookProps) {
   return (
     <div className="mb-8">
       <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 h-4 w-4 bg-[#316ac5]"></div>
+        <div className="mr-2 size-4 bg-[#316ac5]"></div>
         <h2 className="text-lg font-bold">Guestbook</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-[#ffffff] p-4">
+      <div className="border-2 border-[#aca899] bg-white p-4">
         <div>
           <div className="mb-6 text-center">
             <BlinkingText className="mb-2 text-xl font-bold text-[#ff0000]">
@@ -65,7 +65,7 @@ export function Guestbook({ messages }: GuestbookProps) {
               {messages.map((message, index) => (
                 <div
                   key={index}
-                  className="border border-[#aca899] bg-[#ffffff] p-3"
+                  className="border border-[#aca899] bg-white p-3"
                 >
                   <div className="flex items-start">
                     <div className="mr-3">

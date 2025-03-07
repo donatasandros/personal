@@ -13,12 +13,10 @@ export function TitleBar() {
         />
         <span className="text-sm font-bold">My Portfolio - Paint</span>
       </div>
-      <div className="flex">
-        <button className="mx-0.5 px-2 text-white hover:bg-[#3a6ea5]">_</button>
-        <button className="mx-0.5 px-2 text-white hover:bg-[#3a6ea5]">□</button>
-        <button className="mx-0.5 bg-[#ff0000]/80 px-2 text-white hover:bg-[#ff0000]">
-          X
-        </button>
+      <div className="flex *:mx-0.5 *:px-2 *:text-white">
+        <button className="hover:bg-[#3a6ea5]">_</button>
+        <button className="hover:bg-[#3a6ea5]">□</button>
+        <button className="bg-[#ff0000]/80 hover:bg-[#ff0000]">X</button>
       </div>
     </div>
   );

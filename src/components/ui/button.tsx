@@ -14,7 +14,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
-          "border-t-2 border-r-2 border-b-2 border-l-2 border-[#aca899] bg-[#ece9d8] px-4 py-1 focus:border-dotted focus:border-black focus:outline-none active:border-t-2 active:border-r-2 active:border-b-2 active:border-l-2 active:border-[#aca899]",
+          "border-2 border-[#aca899] bg-[#ece9d8] px-4 py-1 focus:border-dotted focus:border-black focus:outline-none active:border-[#aca899]",
           className,
         )}
         ref={ref}
