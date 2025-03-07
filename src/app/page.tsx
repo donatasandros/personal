@@ -1,14 +1,13 @@
 import type { GuestbookMessage } from "@/types";
 
-import { AboutMe } from "@/components/about-me";
-import { Contact } from "@/components/contact";
-import { Guestbook } from "@/components/guestbook";
-import { Header } from "@/components/header";
-import { MenuBar } from "@/components/menu-bar";
-import { Projects } from "@/components/projects";
-import { StartBar } from "@/components/start-bar";
-import { TechStack } from "@/components/tech-stack";
-import { TitleBar } from "@/components/title-bar";
+import { MenuBar } from "@/components/misc/menu-bar";
+import { StartBar } from "@/components/misc/start-bar";
+import { TitleBar } from "@/components/misc/title-bar";
+import { AboutMe } from "@/components/sections/about-me";
+import { Contact } from "@/components/sections/contact";
+import { Guestbook } from "@/components/sections/guestbook";
+import { Projects } from "@/components/sections/projects";
+import { TechStack } from "@/components/sections/tech-stack";
 import { sql } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -21,12 +20,24 @@ export default async function IndexPage() {
   ])) as [{ count: number }[], GuestbookMessage[]];
 
   return (
-    <div className="font-windows bg-[#008080] p-4 pb-14">
+    <div className="font-windows p-4 pb-14">
       <div className="mx-auto max-w-[900px] border-2 border-[#0a246a] shadow-xl">
         <TitleBar />
         <MenuBar />
         <div className="overflow-auto bg-white p-4">
-          <Header />
+          <div className="mb-8 text-center">
+            <div className="inline-block">
+              <div
+                className="mb-2 text-4xl font-bold text-[#0000ff]"
+                style={{ fontFamily: "Comic Sans MS, cursive" }}
+              >
+                My Portfolio!
+              </div>
+              <div className="h-2 bg-[#ff0000]"></div>
+              <div className="h-2 bg-[#00ff00]"></div>
+              <div className="h-2 bg-[#0000ff]"></div>
+            </div>
+          </div>
           <AboutMe count={count} />
           <TechStack />
           <Projects />

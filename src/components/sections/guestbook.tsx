@@ -4,7 +4,7 @@ import * as React from "react";
 
 import type { GuestbookMessage } from "@/types";
 
-import { GuestbookForm } from "@/components/guestbook-form";
+import { GuestbookForm } from "@/components/forms/guestbook-form";
 import { Avatar } from "@/components/ui/avatar";
 import { BlinkingText } from "@/components/ui/blinking-text";
 import { Button } from "@/components/ui/button";

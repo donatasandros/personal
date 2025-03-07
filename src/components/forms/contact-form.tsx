@@ -3,9 +3,8 @@
 import * as React from "react";
 
 import { sendContactMessage } from "@/actions/send-contact-message";
+import { BlinkingText } from "@/components/ui/blinking-text";
 import { Button } from "@/components/ui/button";
-
-import { BlinkingText } from "./ui/blinking-text";
 
 export function ContactForm() {
   const [state, action, isLoading] = React.useActionState(sendContactMessage, {

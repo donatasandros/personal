@@ -14,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`bg-white antialiased`}>{children}</body>
+      <body
+        className={`bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

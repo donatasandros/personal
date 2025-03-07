@@ -11,7 +11,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "default":
       return (
         <svg
-          data-avatar="Default User"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -33,7 +32,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "casual":
       return (
         <svg
-          data-avatar="Casual"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -58,7 +56,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "developer":
       return (
         <svg
-          data-avatar="Developer"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -83,7 +80,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "professional":
       return (
         <svg
-          data-avatar="Professional"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -107,7 +103,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "gamer":
       return (
         <svg
-          data-avatar="Gamer"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
@@ -134,7 +129,6 @@ export function Avatar({ type, className, ...props }: AvatarProps) {
     case "creative":
       return (
         <svg
-          data-avatar="Creative"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"

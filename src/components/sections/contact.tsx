@@ -1,10 +1,8 @@
-import Image from "next/image";
+import { GithubIcon, InstagramIcon, MailIcon, MapPinIcon } from "lucide-react";
 import Link from "next/link";
 
-import { ContactForm } from "@/components/contact-form";
+import { ContactForm } from "@/components/forms/contact-form";
 import { CONTACT_INFO } from "@/config/contact-info";
-
-import { Icons } from "./icons";
 
 export function Contact() {
   return (
@@ -31,27 +29,22 @@ export function Contact() {
               <div className="space-y-4 p-2">
                 <div className="flex items-center">
                   <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
-                    <Image
-                      src="https://placehold.co/16x16/png"
-                      alt="Email"
-                      width={16}
-                      height={16}
-                    />
+                    <MailIcon className="h-4 w-4 text-[#0000cc]" />
                   </div>
                   <div>
                     <p className="font-bold">Email</p>
-                    <p className="text-sm">{CONTACT_INFO.email}</p>
+                    <Link
+                      href={`mailto:${CONTACT_INFO.email}`}
+                      target="_blank"
+                      className="text-sm"
+                    >
+                      {CONTACT_INFO.email}
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
-                    <Icons.Email className="size-4" />
-                    {/* <Image
-                      src="https://placehold.co/16x16/png"
-                      alt="Location"
-                      width={16}
-                      height={16}
-                    /> */}
+                    <MapPinIcon className="h-4 w-4 text-[#0000cc]" />
                   </div>
                   <div>
                     <p className="font-bold">Location</p>
@@ -60,20 +53,31 @@ export function Contact() {
                 </div>
                 <div className="flex items-center">
                   <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
-                    <Image
-                      src="https://placehold.co/16x16/png"
-                      alt="GitHub"
-                      width={16}
-                      height={16}
-                    />
+                    <GithubIcon className="h-4 w-4 text-[#0000cc]" />
                   </div>
                   <div>
                     <p className="font-bold">GitHub</p>
                     <Link
                       href={`https://${CONTACT_INFO.github}`}
+                      target="_blank"
                       className="text-sm"
                     >
                       {CONTACT_INFO.github}
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
+                    <InstagramIcon className="h-4 w-4 text-[#0000cc]" />
+                  </div>
+                  <div>
+                    <p className="font-bold">Instagram</p>
+                    <Link
+                      href={`https://${CONTACT_INFO.instagram}`}
+                      target="_blank"
+                      className="text-sm"
+                    >
+                      {CONTACT_INFO.instagram}
                     </Link>
                   </div>
                 </div>
