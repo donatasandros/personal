@@ -1,9 +1,7 @@
-"use client";
+import { sql } from "@/lib/db";
 
-import * as React from "react";
-
-export function Counter() {
-  const [count] = React.useState(0);
+export async function Counter() {
+  const [{ count }] = await sql`SELECT COUNT(*) FROM views;`;
 
   return (
     <div className="inline-block bg-white border-2 border-[#aca899] px-2 py-1 text-sm">
