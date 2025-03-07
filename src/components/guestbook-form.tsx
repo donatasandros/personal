@@ -33,6 +33,16 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
           action={action}
           className="border border-[#aca899] bg-[#ffffff] p-4"
         >
+          {!state.success && state.message && (
+            <div className="mb-3 border-2 border-[#cc0000] bg-[#ffffcc] p-2">
+              <div className="flex items-start">
+                <div className="mr-2 flex h-5 w-5 items-center justify-center bg-[#cc0000] font-bold text-white">
+                  !
+                </div>
+                <div className="text-sm text-[#cc0000]">{state.message}</div>
+              </div>
+            </div>
+          )}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="space-y-4">
               <div>
@@ -69,7 +79,6 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
                 </p>
               </div>
             </div>
-
             <div className="space-y-4">
               <div>
                 <label className="mb-1 block text-sm font-bold">

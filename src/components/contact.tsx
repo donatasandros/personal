@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
 import { CONTACT_INFO } from "@/config/contact-info";
 
+import { Icons } from "./icons";
+
 export function Contact() {
   return (
     <div className="mb-8">
@@ -43,12 +45,13 @@ export function Contact() {
                 </div>
                 <div className="flex items-center">
                   <div className="mr-2 flex h-8 w-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
-                    <Image
+                    <Icons.Email className="size-4" />
+                    {/* <Image
                       src="https://placehold.co/16x16/png"
                       alt="Location"
                       width={16}
                       height={16}
-                    />
+                    /> */}
                   </div>
                   <div>
                     <p className="font-bold">Location</p>
