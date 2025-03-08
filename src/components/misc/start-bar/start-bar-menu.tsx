@@ -81,7 +81,7 @@ export function StartBarMenu() {
 
   return (
     <div>
-      <PopoverPrimitive.Popover modal>
+      <PopoverPrimitive.Popover>
         <PopoverPrimitive.Trigger asChild>
           <button className="mx-1 flex h-8 cursor-pointer items-center rounded-l rounded-r bg-gradient-to-r from-[#388e3c] to-[#1b5e20] px-2 text-white">
             <svg
@@ -100,24 +100,24 @@ export function StartBarMenu() {
           </button>
         </PopoverPrimitive.Trigger>
         <PopoverPrimitive.Content align="start" side="top" sideOffset={8}>
-          <div className="w-64 border-2 border-[#aca899] bg-[#ece9d8] shadow-lg">
+          <div className="border-border bg-window w-64 border-2 shadow-lg">
             <div className="p-2">
-              <div className="mb-2 border-b border-[#aca899] pb-2">
+              <div className="border-border mb-2 border-b pb-2">
                 {startMenuItems.slice(0, 6).map((item, index) => (
                   <button
                     key={index}
-                    className="flex w-full items-center rounded p-2 text-left hover:bg-[#316ac5] hover:text-white"
+                    className="hover:bg-highlightBg hover:text-highlightText flex w-full items-center rounded p-2 text-left"
                   >
                     {item.icon}
                     <span className="ml-2">{item.name}</span>
                   </button>
                 ))}
               </div>
-              <div className="mb-2 border-b border-[#aca899] pb-2">
+              <div className="border-border mb-2 border-b pb-2">
                 {startMenuItems.slice(6, 8).map((item, index) => (
                   <button
                     key={index}
-                    className="flex w-full items-center rounded p-2 text-left hover:bg-[#316ac5] hover:text-white"
+                    className="hover:bg-highlightBg hover:text-highlightText flex w-full items-center rounded p-2 text-left"
                   >
                     {item.icon}
                     <span className="ml-2">{item.name}</span>
@@ -128,7 +128,7 @@ export function StartBarMenu() {
                 {startMenuItems.slice(8).map((item, index) => (
                   <button
                     key={index}
-                    className={`flex w-full cursor-pointer items-center rounded p-2 text-left hover:bg-[#316ac5] hover:text-white`}
+                    className={`hover:bg-highlightBg hover:text-highlightText flex w-full cursor-pointer items-center rounded p-2 text-left`}
                     onClick={handleShowEasterEgg}
                   >
                     {item.icon}

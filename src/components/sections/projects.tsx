@@ -11,7 +11,7 @@ export function Projects() {
         <div className="bg-accent mr-2 size-4"></div>
         <h2 className="text-lg font-bold">My Projects</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-white p-4">
+      <div className="border-border border-2 bg-white p-4">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {PROJECTS.map(
             ({ image, name, description, link, source_code }, index) => (
