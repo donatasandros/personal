@@ -4,6 +4,7 @@ import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
+import { VIRUS_MESSAGES } from "@/config/virus";
 
 export function FakeVirusAlert() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -27,13 +28,16 @@ export function FakeVirusAlert() {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      if (Math.random() > 0.95 && !isOpen) {
+      if (Math.random() > 0.8 && !isOpen) {
         triggerAlert();
       }
     }, 20000);
 
     return () => clearInterval(interval);
   }, [isOpen, triggerAlert]);
+
+  const randomMessage =
+    VIRUS_MESSAGES[Math.floor(Math.random() * VIRUS_MESSAGES.length)];
 
   return (
     <AlertDialogPrimitive.Root open={isOpen} onOpenChange={setIsOpen}>
@@ -61,34 +65,20 @@ export function FakeVirusAlert() {
               </div>
             </div>
             <div className="mb-4 border border-red-600 bg-yellow-100 p-2 text-xs text-red-600">
-              {Math.random() > 0.5 ? (
-                <React.Fragment>
-                  <p className="font-bold">Threat details:</p>
-                  <p>Type: Trojan.JS.FakeAlert</p>
-                  <p>Risk Level: High</p>
-                  <p>Files affected: 13</p>
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <p className="font-bold">YOUR SYSTEM IS AT RISK!</p>
-                  <p>Windows has detected SPYWARE on your computer!</p>
-                  <p>Personal and banking information at risk!</p>
-                  <p>Click &quot;Remove Threats&quot; now!</p>
-                </React.Fragment>
-              )}
+              <p className="font-bold">{randomMessage.title}</p>
+              {randomMessage.content.map((line, index) => (
+                <p key={`virus-message-content-${index}`}>{line}</p>
+              ))}
             </div>
             <div className="flex justify-between gap-2">
-              {Math.random() > 0.5 ? (
-                <React.Fragment>
-                  <Button onClick={handleYesClick}>Remove Threats</Button>
-                  <Button onClick={handleClose}>Ignore</Button>
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <Button onClick={handleYesClick}>Download Protection</Button>
-                  <Button onClick={handleClose}>Cancel</Button>
-                </React.Fragment>
-              )}
+              {randomMessage.buttons.map(({ text }, index) => (
+                <Button
+                  key={`virus-message-button-${index}`}
+                  onClick={index === 0 ? handleYesClick : handleClose}
+                >
+                  {text}
+                </Button>
+              ))}
             </div>
             <div className="mt-4 text-center text-[10px] text-gray-500">
               Don&apos;t worry! This is just a joke. No real viruses here!
