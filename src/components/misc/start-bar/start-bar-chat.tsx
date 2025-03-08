@@ -99,8 +99,13 @@ export function StartBarChat() {
           <span>Messenger</span>
         </button>
       </PopoverPrimitive.Trigger>
-      <PopoverPrimitive.Content align="start" side="top" sideOffset={8}>
-        <div className="border-border w-80 border-2 shadow-lg">
+      <PopoverPrimitive.Content
+        align="start"
+        side="top"
+        sideOffset={8}
+        className="p-2"
+      >
+        <div className="border-border w-full max-w-80 border-2 shadow-lg">
           <div className="from-titleBarFrom to-titleBarTo text-highlightText flex items-center justify-between bg-gradient-to-r p-1">
             <div>
               <span className="text-sm font-bold">Messenger</span>
@@ -122,7 +127,7 @@ export function StartBarChat() {
           {isMinimized ? (
             <button
               onClick={() => setIsMinimized(false)}
-              className="bg-window border-border flex w-full cursor-pointer justify-between border-t p-1 text-xs"
+              className="bg-window border-border flex cursor-pointer justify-between border-t p-1 text-xs"
             >
               <span>Messenger</span>
               <span>

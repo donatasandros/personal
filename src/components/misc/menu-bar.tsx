@@ -2,7 +2,7 @@ import { ThemeSwitcher } from "@/components/misc/theme-switcher";
 
 export function MenuBar() {
   return (
-    <div className="border-border bg-window flex border-b text-xs text-black">
+    <div className="border-border bg-window flex flex-wrap border-b text-xs text-black">
       <button className="hover:bg-highlightBg hover:text-highlightText px-3 py-1">
         File
       </button>
