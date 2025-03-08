@@ -39,3 +39,7 @@ DISCORD_WEBHOOK_URL=
 ```sh
 bun run dev
 ```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
