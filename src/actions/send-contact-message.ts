@@ -57,7 +57,7 @@ export async function sendContactMessage(
               },
               {
                 name: "Email",
-                value: `*data.email*`,
+                value: `*${data.email}*`,
                 inline: false,
               },
               {
