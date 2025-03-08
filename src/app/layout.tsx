@@ -25,9 +25,7 @@ export default function RootLayout({
           src="//unpkg.com/react-scan/dist/auto.global.js"
         />
       </head>
-      <body
-        className={`bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden`}
-      >
+      <body className="bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden has-[&[data-easter-egg]]:bg-[#0000aa]">
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="default"
