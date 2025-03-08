@@ -1,6 +1,9 @@
+import Script from "next/script";
+
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { FakeVirusAlert } from "@/components/misc/fake-virus-alert";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
 export const metadata: Metadata = {
@@ -16,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          crossOrigin="anonymous"
+          src="//unpkg.com/react-scan/dist/auto.global.js"
+        />
+      </head>
       <body
         className={`bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden`}
       >
@@ -24,6 +33,7 @@ export default function RootLayout({
           defaultTheme="default"
           disableTransitionOnChange
         >
+          <FakeVirusAlert />
           {children}
         </ThemeProvider>
       </body>

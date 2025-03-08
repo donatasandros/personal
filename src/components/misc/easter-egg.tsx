@@ -2,7 +2,7 @@ export function EasterEgg() {
   return (
     <div
       data-easter-egg
-      className="fixed inset-0 z-50 bg-[#0000aa] p-8 font-mono text-white"
+      className="fixed inset-0 z-30 bg-[#0000aa] p-8 font-mono text-white"
     >
       <div className="mx-auto max-w-2xl">
         <h1 className="mb-8 text-center text-2xl">Unexpected Easter Egg</h1>
