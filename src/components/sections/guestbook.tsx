@@ -28,10 +28,7 @@ export function Guestbook({ messages }: GuestbookProps) {
             <BlinkingText className="mb-2 text-xl font-bold text-[#ff0000]">
               Sign My Guestbook!!!
             </BlinkingText>
-            <p
-              className="text-[#0000ff]"
-              style={{ fontFamily: "Comic Sans MS, cursive" }}
-            >
+            <p className="text-[#0000ff]">
               Let me know you were here! Leave a message for future visitors!
             </p>
             <div className="mt-4 flex justify-center">

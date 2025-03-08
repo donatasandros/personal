@@ -27,10 +27,7 @@ export default async function IndexPage() {
         <div className="overflow-auto bg-white p-4">
           <div className="mb-8 text-center">
             <div className="inline-block">
-              <div
-                className="mb-2 text-4xl font-bold text-[#0000ff]"
-                style={{ fontFamily: "Comic Sans MS, cursive" }}
-              >
+              <div className="mb-2 text-4xl font-bold text-[#0000ff]">
                 My Portfolio!
               </div>
               <div className="h-2 bg-[#ff0000]"></div>
