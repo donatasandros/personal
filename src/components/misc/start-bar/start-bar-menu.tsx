@@ -85,53 +85,16 @@ export function StartBarMenu() {
         <PopoverPrimitive.Trigger asChild>
           <button className="mx-1 flex h-8 items-center rounded-l rounded-r bg-gradient-to-r from-[#388e3c] to-[#1b5e20] px-2 text-white">
             <svg
-              viewBox="0 0 40 40"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 40"
               width="100%"
               height="100%"
-              className="mr-1 size-5"
+              className="mr-1 size-4"
             >
-              <rect width="40" height="40" fill="#004e98"></rect>
-              <rect y="36" width="40" height="4" fill="#0c5da5"></rect>
-              <rect x="2" y="4" width="36" height="32" fill="#3a6ea5"></rect>
-              <rect x="2" y="4" width="10" height="32" fill="#246ebd"></rect>
-              <rect x="12" y="4" width="26" height="8" fill="#b2cbe5"></rect>
-              <rect x="12" y="12" width="26" height="16" fill="#ccddf1"></rect>
-              <rect x="12" y="28" width="26" height="8" fill="#e3eaf8"></rect>
-              <rect x="3" y="6" width="8" height="8" fill="#ffe7c7"></rect>
-              <rect x="3" y="6" width="8" height="2" fill="#5a3825"></rect>
-              <rect x="4" y="8" width="2" height="2" fill="#000000"></rect>
-              <rect x="8" y="8" width="2" height="2" fill="#000000"></rect>
-              <rect x="5" y="11" width="4" height="1" fill="#d4a76a"></rect>
-              <rect x="3" y="16" width="8" height="2" fill="#ffffff"></rect>
-              <rect x="3" y="19" width="8" height="2" fill="#ffffff"></rect>
-              <rect x="3" y="22" width="8" height="2" fill="#ffffff"></rect>
-              <rect x="3" y="25" width="8" height="2" fill="#ffffff"></rect>
-              <rect x="3" y="28" width="8" height="2" fill="#ffffff"></rect>
-              <rect
-                x="14"
-                y="7"
-                width="6"
-                height="6"
-                fill="#ff9c27"
-              ></rect>{" "}
-              <rect x="22" y="7" width="6" height="6" fill="#4caf50"></rect>{" "}
-              <rect x="30" y="7" width="6" height="6" fill="#e91e63"></rect>{" "}
-              <rect x="14" y="15" width="22" height="1" fill="#a0b4c8"></rect>{" "}
-              <rect x="14" y="18" width="22" height="2" fill="#333333"></rect>
-              <rect x="14" y="22" width="22" height="2" fill="#333333"></rect>
-              <rect x="14" y="26" width="22" height="2" fill="#333333"></rect>
-              <rect x="14" y="30" width="22" height="2" fill="#333333"></rect>
-              <rect x="14" y="34" width="8" height="1" fill="#333333"></rect>
-              <rect x="23" y="33" width="1" height="3" fill="#333333"></rect>
-              <rect x="22" y="34" width="1" height="1" fill="#333333"></rect>
-              <rect x="24" y="34" width="1" height="1" fill="#333333"></rect>
-              <rect y="36" width="10" height="4" fill="#57a638"></rect>
-              <rect x="2" y="37" width="2" height="2" fill="#ffffff"></rect>
-              <rect x="5" y="37" width="3" height="2" fill="#ffffff"></rect>
-              <rect x="34" y="37" width="2" height="2" fill="#ffffff"></rect>
-              <rect x="37" y="37" width="2" height="2" fill="#ffffff"></rect>
-              <rect x="31" y="37" width="2" height="2" fill="#ffffff"></rect>
+              <rect x="0" y="0" width="20" height="20" fill="#f65314" />
+              <rect x="20" y="0" width="20" height="20" fill="#7cbb00" />
+              <rect x="0" y="20" width="20" height="20" fill="#00a1f1" />
+              <rect x="20" y="20" width="20" height="20" fill="#ffbb00" />
             </svg>
             <span className="font-bold">Start</span>
           </button>
