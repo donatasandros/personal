@@ -17,8 +17,8 @@ export function AboutMe({ count }: AboutMeProps) {
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-2/3">
             <p className="mb-4">
-              Hello! My name is Donatas, and I&apos;m a junior frontend
-              developer passionate about building clean, user-friendly, and
+              Hello! My name is Donatas, and I&apos;m a Junior Frontend
+              Developer passionate about building clean, user-friendly, and
               interactive web experiences.
             </p>
             <p className="mb-4">
