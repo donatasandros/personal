@@ -31,7 +31,7 @@ export function Projects() {
                     className="h-auto w-full border border-[#aca899]"
                   />
                 </div>
-                <p className="mb-2 line-clamp-1 text-sm">{description}</p>
+                <p className="mb-2 line-clamp-2 text-sm">{description}</p>
                 <div className="flex justify-between">
                   <Button asChild>
                     <Link href={link}>View Project</Link>

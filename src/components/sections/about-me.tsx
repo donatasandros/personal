@@ -1,6 +1,6 @@
 import { Avatar } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { CONTACT_INFO } from "@/config/contact-info";
+// import { Button } from "@/components/ui/button";
 
 interface AboutMeProps {
   count: number;
@@ -32,9 +32,9 @@ export function AboutMe({ count }: AboutMeProps) {
               exploring design trends, and finding inspiration for my next
               project.
             </p>
-            <div className="my-4 flex justify-center">
+            {/* <div className="my-4 flex justify-center">
               <Button>Download Resume</Button>
-            </div>
+            </div> */}
           </div>
           <div className="md:w-1/3">
             <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
