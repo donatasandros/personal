@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -56,12 +54,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <Script
-          crossOrigin="anonymous"
-          src="//unpkg.com/react-scan/dist/auto.global.js"
-        />
-      </head>
       <body className="bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden has-[&[data-easter-egg]]:bg-[#0000aa]">
         <ThemeProvider
           attribute="data-theme"
