@@ -16,18 +16,18 @@ export function AboutMe({ count }: AboutMeProps) {
       <div className="border-border border-2 bg-white p-4">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-2/3">
-            <p className="mb-4">
+            <p className="mb-4 text-sm">
               Hello! My name is Donatas, and I&apos;m a Junior Frontend
               Developer passionate about building clean, user-friendly, and
               interactive web experiences.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm">
               I love turning designs into functional and responsive websites
               using modern frontend technologies. While I&apos;m still growing
               in my journey, I&apos;m always eager to learn new tools, improve
               my skills, and tackle exciting challenges in web development.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm">
               When I&apos;m not coding, I enjoy learning about new technologies,
               exploring design trends, and finding inspiration for my next
               project.
