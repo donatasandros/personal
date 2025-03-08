@@ -83,7 +83,7 @@ export function StartBarMenu() {
     <div>
       <PopoverPrimitive.Popover modal>
         <PopoverPrimitive.Trigger asChild>
-          <button className="mx-1 flex h-8 items-center rounded-l rounded-r bg-gradient-to-r from-[#388e3c] to-[#1b5e20] px-2 text-white">
+          <button className="mx-1 flex h-8 cursor-pointer items-center rounded-l rounded-r bg-gradient-to-r from-[#388e3c] to-[#1b5e20] px-2 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 40 40"
@@ -128,7 +128,7 @@ export function StartBarMenu() {
                 {startMenuItems.slice(8).map((item, index) => (
                   <button
                     key={index}
-                    className={`flex w-full items-center rounded p-2 text-left hover:bg-[#316ac5] hover:text-white`}
+                    className={`flex w-full cursor-pointer items-center rounded p-2 text-left hover:bg-[#316ac5] hover:text-white`}
                     onClick={handleShowEasterEgg}
                   >
                     {item.icon}

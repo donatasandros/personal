@@ -12,7 +12,7 @@ export function ThemeSwitcher() {
   return (
     <DropdownMenuPrimitive.Root>
       <DropdownMenuPrimitive.Trigger asChild>
-        <button className="hover:bg-highlightBg hover:text-highlightText px-3 py-1 outline-none">
+        <button className="hover:bg-highlightBg hover:text-highlightText cursor-pointer px-3 py-1 outline-none">
           Theme
         </button>
       </DropdownMenuPrimitive.Trigger>
@@ -30,7 +30,7 @@ export function ThemeSwitcher() {
               key={`theme-${key}`}
               data-theme={key}
               onClick={() => setTheme(key)}
-              className={cn("text-text flex items-center p-1", {
+              className={cn("text-text flex cursor-pointer items-center p-1", {
                 "bg-highlightBg text-highlightText": theme === key,
               })}
             >
