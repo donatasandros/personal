@@ -22,14 +22,14 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
   return (
     <React.Fragment>
       {state.success ? (
-        <div className="border border-[#aca899] bg-white p-4 text-center">
+        <div className="border-border border bg-white p-4 text-center">
           <p className="mb-2 font-bold text-[#008000]">
             Thank you for signing my guestbook!
           </p>
           <p>Your message has been added.</p>
         </div>
       ) : (
-        <form action={action} className="border border-[#aca899] bg-white p-4">
+        <form action={action} className="border-border border bg-white p-4">
           {!state.success && state.message && (
             <div className="mb-3 border-2 border-[#cc0000] bg-[#ffffcc] p-2">
               <div className="flex items-start">
@@ -54,7 +54,7 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
                   name="name"
                   id="guestbook-name"
                   required
-                  className="w-full border-2 border-[#aca899] p-1"
+                  className="border-border w-full border-2 p-1"
                 />
               </div>
               <div>
@@ -69,7 +69,7 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
                   name="email"
                   id="guestbook-email"
                   required
-                  className="w-full border-2 border-[#aca899] p-1"
+                  className="border-border w-full border-2 p-1"
                 />
                 <p className="mt-1 text-xs text-[#666666]">
                   (Will not be displayed publicly)
@@ -81,16 +81,15 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
                 <label className="mb-1 block text-sm font-bold">
                   Choose Avatar:
                 </label>
-                <div className="flex flex-wrap gap-2 border border-[#aca899] bg-[#f5f5f5] p-2">
+                <div className="border-border flex flex-wrap gap-2 border bg-[#f5f5f5] p-2">
                   {AVATARS.map((avatar) => (
                     <button
                       key={avatar}
                       type="button"
                       onClick={() => setSelectedAvatar(avatar)}
                       className={cn(
-                        "cursor-pointer p-1",
-                        selectedAvatar === avatar &&
-                          "border border-[#aca899] bg-[#316ac5]",
+                        "cursor-pointer border border-transparent p-1",
+                        selectedAvatar === avatar && "border-border bg-accent",
                       )}
                     >
                       <Avatar
@@ -110,7 +109,7 @@ export function GuestbookForm({ setShowForm }: GuestbookFormProps) {
                   name="message"
                   required
                   rows={4}
-                  className="w-full border-2 border-[#aca899] p-1"
+                  className="border-border w-full border-2 p-1"
                 ></textarea>
               </div>
             </div>

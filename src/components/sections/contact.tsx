@@ -7,28 +7,28 @@ import { CONTACT_INFO } from "@/config/contact-info";
 export function Contact() {
   return (
     <div className="mb-8">
-      <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 size-4 bg-[#316ac5]"></div>
+      <div className="border-border bg-window mb-2 flex items-center border-2 p-2">
+        <div className="bg-accent mr-2 size-4"></div>
         <h2 className="text-lg font-bold">Contact Me</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-white p-4">
+      <div className="border-border border-2 bg-white p-4">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-1/2">
-            <div className="mb-4 border-2 border-[#aca899] bg-[#ece9d8] p-2">
-              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
+            <div className="bg-window border-border mb-4 border-2 p-2">
+              <div className="bg-accent mb-2 p-1 text-center font-bold text-white">
                 Send Me a Message
               </div>
               <ContactForm />
             </div>
           </div>
           <div className="md:w-1/2">
-            <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
-              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
+            <div className="border-border bg-window border-2 p-2">
+              <div className="bg-accent mb-2 p-1 text-center font-bold text-white">
                 Contact Information
               </div>
               <div className="space-y-4 p-2">
                 <div className="flex items-center">
-                  <div className="mr-2 flex size-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
+                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
                     <MailIcon className="size-4 text-[#0000cc]" />
                   </div>
                   <div>
@@ -43,7 +43,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="mr-2 flex size-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
+                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
                     <MapPinIcon className="size-4 text-[#0000cc]" />
                   </div>
                   <div>
@@ -52,7 +52,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="mr-2 flex size-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
+                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
                     <GithubIcon className="size-4 text-[#0000cc]" />
                   </div>
                   <div>
@@ -67,7 +67,7 @@ export function Contact() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="mr-2 flex size-8 items-center justify-center border border-[#aca899] bg-[#d4d0c8]">
+                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
                     <InstagramIcon className="size-4 text-[#0000cc]" />
                   </div>
                   <div>

@@ -21,7 +21,7 @@ export default async function IndexPage() {
 
   return (
     <div className="font-windows p-4 pb-14">
-      <div className="mx-auto max-w-[900px] border-2 border-[#0a246a] shadow-xl">
+      <div className="border-border mx-auto max-w-[900px] border-2 shadow-xl">
         <TitleBar />
         <MenuBar />
         <div className="overflow-auto bg-white p-4">

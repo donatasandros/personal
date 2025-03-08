@@ -14,7 +14,7 @@ export function ContactForm() {
   return (
     <React.Fragment>
       {state.success ? (
-        <div className="border border-[#aca899] bg-white p-4 text-center">
+        <div className="border-border border bg-white p-4 text-center">
           <BlinkingText className="mb-2 font-bold text-[#008000]">
             Message sent successfully!
           </BlinkingText>
@@ -41,7 +41,7 @@ export function ContactForm() {
               name="name"
               id="contactName"
               required
-              className="w-full border-2 border-[#aca899] p-1"
+              className="border-border w-full border-2 p-1"
             />
           </div>
           <div>
@@ -53,7 +53,7 @@ export function ContactForm() {
               name="email"
               id="contactEmail"
               required
-              className="w-full border-2 border-[#aca899] p-1"
+              className="border-border w-full border-2 p-1"
             />
           </div>
           <div>
@@ -61,7 +61,7 @@ export function ContactForm() {
               Message: <span className="text-[#ff0000]">*</span>
             </label>
             <textarea
-              className="w-full border-2 border-[#aca899] p-1"
+              className="border-border w-full border-2 p-1"
               rows={4}
               name="message"
               id="contactMessage"

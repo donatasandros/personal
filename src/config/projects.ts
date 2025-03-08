@@ -19,14 +19,15 @@ export const PROJECTS = [
     image: "https://placehold.co/150x150/png",
     name: "Respublikinė sportinio šaudymo asociacija",
     description:
-      "A modernwebsite for National Sports Shooting Association of Lithuania, built with NextJS.",
+      "A modern website for National Sports Shooting Association of Lithuania, built with NextJS.",
     link: "https://www.rssa.lt",
     source_code: "https://github.com/donatasandros",
   },
   {
     image: "https://placehold.co/150x150/png",
     name: "Placeholder",
-    description: "Placeholder",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.",
     link: "https://github.com/donatasandros",
     source_code: "https://github.com/donatasandros",
   },

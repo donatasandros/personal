@@ -18,11 +18,11 @@ export function Guestbook({ messages }: GuestbookProps) {
 
   return (
     <div className="mb-8">
-      <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 size-4 bg-[#316ac5]"></div>
+      <div className="border-border bg-window mb-2 flex items-center border-2 p-2">
+        <div className="bg-accent mr-2 size-4"></div>
         <h2 className="text-lg font-bold">Guestbook</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-white p-4">
+      <div className="border-border border-2 bg-white p-4">
         <div>
           <div className="mb-6 text-center">
             <BlinkingText className="mb-2 text-xl font-bold text-[#ff0000]">
@@ -47,23 +47,20 @@ export function Guestbook({ messages }: GuestbookProps) {
               <Button onClick={() => setShowForm(true)}>Sign Guestbook</Button>
             </div>
           ) : (
-            <div className="mb-6 border-2 border-[#aca899] bg-[#ece9d8] p-4">
-              <div className="mb-4 bg-[#316ac5] p-1 font-bold text-white">
+            <div className="border-border bg-window mb-6 border-2 p-4">
+              <div className="bg-accent mb-4 p-1 font-bold text-white">
                 Sign My Guestbook
               </div>
               <GuestbookForm setShowForm={setShowForm} />
             </div>
           )}
-          <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
-            <div className="mb-2 bg-[#316ac5] p-1 font-bold text-white">
+          <div className="border-border bg-window border-2 p-2">
+            <div className="bg-accent mb-2 p-1 font-bold text-white">
               Recent Guestbook Entries
             </div>
             <div className="max-h-[400px] space-y-4 overflow-y-auto p-2">
               {messages.map((message, index) => (
-                <div
-                  key={index}
-                  className="border border-[#aca899] bg-white p-3"
-                >
+                <div key={index} className="border-border border bg-white p-3">
                   <div className="flex items-start">
                     <div className="mr-3">
                       <Avatar

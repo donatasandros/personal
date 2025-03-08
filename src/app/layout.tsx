@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "Donatas Andros",
@@ -17,7 +19,13 @@ export default function RootLayout({
       <body
         className={`bg-[#008080] antialiased has-[&[data-easter-egg]]:overflow-hidden`}
       >
-        {children}
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="default"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

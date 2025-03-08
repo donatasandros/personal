@@ -9,11 +9,11 @@ interface AboutMeProps {
 export function AboutMe({ count }: AboutMeProps) {
   return (
     <div className="mb-8">
-      <div className="mb-2 flex items-center border-2 border-[#aca899] bg-[#ece9d8] p-2">
-        <div className="mr-2 size-4 bg-[#316ac5]"></div>
+      <div className="border-border bg-window mb-2 flex items-center border-2 p-2">
+        <div className="bg-accent mr-2 size-4"></div>
         <h2 className="text-lg font-bold">About Me</h2>
       </div>
-      <div className="border-2 border-[#aca899] bg-white p-4">
+      <div className="border-border border-2 bg-white p-4">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="md:w-2/3">
             <p className="mb-4">
@@ -37,20 +37,20 @@ export function AboutMe({ count }: AboutMeProps) {
             </div> */}
           </div>
           <div className="md:w-1/3">
-            <div className="border-2 border-[#aca899] bg-[#ece9d8] p-2">
-              <div className="mb-2 bg-[#316ac5] p-1 text-center font-bold text-white">
+            <div className="border-border bg-window border-2 p-2">
+              <div className="bg-accent mb-2 p-1 text-center font-bold text-white">
                 My Profile
               </div>
               <div className="mb-2 flex justify-center">
                 <div className="flex size-[100px] items-center justify-center border-2 border-black bg-white">
                   <Avatar
                     type="gamer"
-                    className="size-22.5 border border-[#aca899]"
+                    className="border-border size-22.5 border"
                   />
                 </div>
               </div>
               <div className="mb-2 text-center">
-                <div className="inline-block border-2 border-[#aca899] bg-white px-2 py-1 text-sm">
+                <div className="border-border inline-block border-2 bg-white px-2 py-1 text-sm">
                   <span className="font-bold">Visitors:</span>{" "}
                   {count.toString().padStart(5, "0")}
                 </div>

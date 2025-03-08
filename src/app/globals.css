@@ -32,6 +32,19 @@ body {
   --animate-blink: blink 1.5s infinite;
   --animate-marquee: marquee 15s linear infinite;
 
+  --color-titleBarFrom: #0a246a;
+  --color-titleBarTo: #3a6ea5;
+  --color-window: #ece9d8;
+  --color-button: #ece9d8;
+  --color-startFrom: #388e3c;
+  --color-startTo: #1b5e20;
+  --color-accent: #316ac5;
+  --color-text: #000000;
+  --color-link: #0000ee;
+  --color-border: #aca899;
+  --color-highlightBg: #316ac5;
+  --color-highlightText: #ffffff;
+
   @keyframes blink {
     0%,
     100% {
@@ -50,4 +63,79 @@ body {
       transform: translateX(-100%);
     }
   }
+}
+
+[data-theme="default"] {
+  --color-titleBarFrom: #0a246a;
+  --color-titleBarTo: #3a6ea5;
+  --color-window: #ece9d8;
+  --color-button: #ece9d8;
+  --color-startFrom: #388e3c;
+  --color-startTo: #1b5e20;
+  --color-accent: #316ac5;
+  --color-text: #000000;
+  --color-link: #0000ee;
+  --color-border: #aca899;
+  --color-highlightBg: #316ac5;
+  --color-highlightText: #ffffff;
+}
+
+[data-theme="classic"] {
+  --color-titleBarFrom: #000080;
+  --color-titleBarTo: #000080;
+  --color-window: #d4d0c8;
+  --color-button: #d4d0c8;
+  --color-startFrom: #808080;
+  --color-startTo: #808080;
+  --color-accent: #000080;
+  --color-text: #000000;
+  --color-link: #0000ee;
+  --color-border: #808080;
+  --color-highlightBg: #000080;
+  --color-highlightText: #ffffff;
+}
+
+[data-theme="luna"] {
+  --color-titleBarFrom: #4e6824;
+  --color-titleBarTo: #7ba33c;
+  --color-window: #ece9d8;
+  --color-button: #ece9d8;
+  --color-startFrom: #4e6824;
+  --color-startTo: #7ba33c;
+  --color-accent: #4e6824;
+  --color-text: #000000;
+  --color-link: #0000ee;
+  --color-border: #aca899;
+  --color-highlightBg: #4e6824;
+  --color-highlightText: #ffffff;
+}
+
+[data-theme="royale"] {
+  --color-titleBarFrom: #143c64;
+  --color-titleBarTo: #2b5797;
+  --color-window: #f0f0f0;
+  --color-button: #f0f0f0;
+  --color-startFrom: #2b5797;
+  --color-startTo: #143c64;
+  --color-accent: #2b5797;
+  --color-text: #000000;
+  --color-link: #0066cc;
+  --color-border: #a0a0a0;
+  --color-highlightBg: #2b5797;
+  --color-highlightText: #ffffff;
+}
+
+[data-theme="zune"] {
+  --color-titleBarFrom: #6a0dad;
+  --color-titleBarTo: #9932cc;
+  --color-window: #f0f0f0;
+  --color-button: #f0f0f0;
+  --color-startFrom: #6a0dad;
+  --color-startTo: #9932cc;
+  --color-accent: #6a0dad;
+  --color-text: #000000;
+  --color-link: #6a0dad;
+  --color-border: #a0a0a0;
+  --color-highlightBg: #6a0dad;
+  --color-highlightText: #ffffff;
 }
