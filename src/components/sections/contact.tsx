@@ -28,54 +28,62 @@ export function Contact() {
               </div>
               <div className="space-y-4 p-2">
                 <div className="flex items-center">
-                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
+                  <div className="border-border bg-window mr-2 flex size-8 shrink-0 items-center justify-center border">
                     <MailIcon className="size-4 text-[#0000cc]" />
                   </div>
-                  <div>
+                  <div className="overflow-hidden">
                     <p className="font-bold">Email</p>
                     <Link
                       href={`mailto:${CONTACT_INFO.email}`}
+                      title={CONTACT_INFO.email}
                       target="_blank"
-                      className="text-sm"
+                      className="block truncate text-sm whitespace-nowrap"
                     >
                       {CONTACT_INFO.email}
                     </Link>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
+                  <div className="border-border bg-window mr-2 flex size-8 shrink-0 items-center justify-center border">
                     <MapPinIcon className="size-4 text-[#0000cc]" />
                   </div>
-                  <div>
+                  <div className="overflow-hidden">
                     <p className="font-bold">Location</p>
-                    <p className="text-sm">{CONTACT_INFO.location}</p>
+                    <p
+                      title={CONTACT_INFO.location}
+                      className="truncate text-sm"
+                    >
+                      {CONTACT_INFO.location}
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
+                  <div className="border-border bg-window mr-2 flex size-8 shrink-0 items-center justify-center border">
                     <GithubIcon className="size-4 text-[#0000cc]" />
                   </div>
-                  <div>
+                  <div className="overflow-hidden">
                     <p className="font-bold">GitHub</p>
                     <Link
                       href={`https://${CONTACT_INFO.github}`}
+                      title={CONTACT_INFO.github}
                       target="_blank"
-                      className="text-sm"
+                      className="block truncate text-sm"
                     >
                       {CONTACT_INFO.github}
                     </Link>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="border-border bg-window mr-2 flex size-8 items-center justify-center border">
+                  <div className="border-border bg-window mr-2 flex size-8 shrink-0 items-center justify-center border">
                     <InstagramIcon className="size-4 text-[#0000cc]" />
                   </div>
-                  <div>
+                  <div className="overflow-hidden">
                     <p className="font-bold">Instagram</p>
                     <Link
                       href={`https://${CONTACT_INFO.instagram}`}
                       target="_blank"
-                      className="text-sm"
+                      title={CONTACT_INFO.instagram}
+                      className="block truncate text-sm"
                     >
                       {CONTACT_INFO.instagram}
                     </Link>
